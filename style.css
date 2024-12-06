@@ -1,0 +1,388 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.ss {
+    /* position: relative; */
+    background-color: rgba(233, 229, 229, 0.877);
+}
+
+/* this is my hero-section */
+
+.hero-section {
+    display: flex;
+    width: 90%;
+    margin: 20px auto;
+    height: 100%;
+    /* padding: 50px 50px; */
+    align-content: center;
+    gap: 30px;
+
+}
+
+.hero-section2 {
+    display: flex;
+    width: 90%;
+    margin: 20px auto;
+    height: 100%;
+    /* padding: 50px 50px; */
+    align-content: center;
+    gap: 50px;
+
+}
+
+.box {
+    width: 60%;
+    height: 25rem;
+
+}
+
+
+.box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.box-a {
+    width: 40%;
+    /* padding-left: 30px; */
+    line-height: 2.2rem;
+    padding-top: 20px;
+    /* height: 25rem; */
+}
+
+.box-a span {
+    font-size: 2.5rem;
+    color: rgb(73, 73, 73);
+    font-weight: 900;
+    line-height: 2.4rem;
+}
+
+sup {
+    color: rgb(73, 73, 73);
+}
+
+.box-a p {
+    font-weight: 520;
+    line-height: 1.6rem;
+    font-size: 15px;
+}
+
+.box-a .para {
+    font-size: 10px;
+}
+
+.hero-section-2 {
+    width: 100%;
+    height: 45rem;
+}
+
+.hero-text h1 {
+    padding-left: 9rem;
+    font-weight: 900;
+    font-size: 3rem;
+    width: 90%;
+    text-align: center;
+}
+
+/* Media Query for Extra Small Devices (max-width: 576px) */
+@media (max-width: 576px) {
+    .navbar-brand img {
+        width: 120px;
+
+    }
+
+
+    .box {
+        height: 13rem;
+        width: 100%;
+    }
+
+
+    .btn {
+        font-size: 0.9rem;
+        /* Adjust button size */
+    }
+
+    .hero-text h1 {
+        padding-left: 2.3rem;
+        font-weight: 700;
+        font-size: 1.5rem;
+        width: 90%;
+        text-align: center;
+
+    }
+
+    .hero-section-2 {
+        height: fit-content;
+        margin-bottom: 10vw;
+    }
+
+    .box-a span {
+        font-size: 1.5rem;
+    }
+
+    .para {
+        font-size: 0.8rem;
+    }
+
+    .foot-main {
+        width: 100%;
+    }
+}
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        height: auto;
+        /* Allow height to adjust for smaller screens */
+        overflow-x: hidden;
+    }
+
+    .navbar-toggler {
+        margin-bottom: 10px;
+        /* Add spacing below the toggler */
+    }
+
+    .ddd {
+        position: fixed;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        /* Stack nav items vertically */
+        align-items: flex-start;
+    }
+
+    .navbar-nav .nav-item {
+        width: 100%;
+        /* Full-width items */
+        text-align: left;
+        /* Align text to the left */
+    }
+
+    .navbar-nav .nav-link {
+        padding: 0.5rem 1rem;
+        /* Adjust padding for smaller screens */
+    }
+
+    .btn {
+        width: 100%;
+        /* Make buttons full-width */
+        font-size: 1rem;
+        /* Adjust font size */
+        margin-bottom: 10px;
+        /* Add spacing between buttons */
+    }
+}
+
+@media (max-width: 992px) {
+
+    .hero-section {
+        flex-direction: column;
+
+    }
+
+    .hero-section2 {
+        flex-direction: column-reverse;
+
+    }
+
+    .box {
+        width: 100%;
+    }
+
+    .box-a {
+
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}
+
+/* this is my card section */
+
+.coffee-img {
+    width: 100%;
+}
+
+.coffee-img img {
+    width: 100%;
+}
+
+
+.cardss {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.card-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+
+}
+
+.carddd {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 50px;
+}
+
+.card1 {
+    width: 25rem;
+    border: 1px solid gray;
+    border-radius: 10px;
+    box-shadow: 9px 11px 10px grey;
+}
+
+.cd {
+    width: 100%;
+    height: 18rem;
+    object-fit: cover;
+}
+
+.cd img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+
+}
+
+.cd1 h2 {
+    padding-top: 6px;
+    font-size: 1.7rem;
+    font-weight: 520;
+    text-align: center;
+}
+
+.cd1 p {
+    font-size: 14px;
+    text-align: center;
+    padding: 10px;
+}
+
+.cd1 button {
+    background-color: rgb(236, 213, 4);
+    border: none;
+    width: 8rem;
+    padding: 5px 0;
+    margin-left: 8rem;
+    margin-bottom: 10px;
+}
+
+/* this is my footer-section */
+
+.foot {
+    min-height: 25rem;
+    background-color: black;
+    background-image: url(img/mac.png);
+    background-size: 65rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+}
+
+.foot-main {
+    min-height: 25rem;
+    padding: 40px 0;
+    background: rgba(83, 83, 83, 0.411);
+    color: white;
+}
+
+.foottt {
+    display: flex;
+    gap: 40px;
+}
+
+.fot {
+    /* width: 90%;
+   
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: space-between; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+.foott {
+    width: 100%;
+    max-width: 350px;
+
+    height: auto;
+
+}
+
+.foott h2 {
+    font-size: 1.4rem;
+    font-weight: 500;
+
+}
+
+.foott p {
+    font-size: 15px;
+    text-align: inherit;
+}
+
+.foott a {
+    text-decoration: none;
+    font-size: 15px;
+    color: rgb(235, 229, 229);
+}
+
+
+.foott a i {
+    float: left;
+    margin: 3px;
+    font-size: 20px;
+    box-sizing: border-box;
+    /* background: -o-linear-gradient(gray yellow); */
+    /* background-color: rgb(43, 186, 190); */
+    padding: 7px;
+    border-radius: 50%;
+    /* color: white; */
+
+}
+
+.terms {
+    font-size: 12px;
+    text-align: center;
+    line-height: 25px;
+    padding-top: 75px;
+
+}
+
+.footline {
+    width: 100%;
+    background-color: rgb(9, 172, 236);
+    color: black;
+    text-align: center;
+    padding-top: 6px;
+}
+
+.footline p,
+.footline a {
+    font-size: 12px;
+    line-height: 5px;
+
+}
